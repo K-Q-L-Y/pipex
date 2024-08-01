@@ -6,7 +6,7 @@
 /*   By: cseng-kh <cseng-kh@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 22:32:08 by cseng-kh          #+#    #+#             */
-/*   Updated: 2024/08/01 12:54:26 by cseng-kh         ###   ########.fr       */
+/*   Updated: 2024/08/01 14:03:03 by cseng-kh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ int	main(int argc, char **argv, char **envp)
 	int		fd[2];
 	char	**paths;
 
-	if (argc > 5)
+	if (argc < 4 || argc > 5)
 		return (1);
 	fd[1] = get_outfile(argv[argc - 1]);
 	fd[0] = get_infile(argv[1]);
