@@ -6,7 +6,7 @@
 /*   By: cseng-kh <cseng-kh@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 22:32:08 by cseng-kh          #+#    #+#             */
-/*   Updated: 2024/08/01 14:03:03 by cseng-kh         ###   ########.fr       */
+/*   Updated: 2024/08/02 10:42:01 by cseng-kh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ static void	close_pipes(int pipes[2])
 {
 	close(pipes[1]);
 }
+
 static void	multi_execute(int n, char **cmds, int fd[2], char **paths)
 {
 	static int	i = -1;

@@ -6,7 +6,7 @@
 /*   By: cseng-kh <cseng-kh@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 21:10:33 by cseng-kh          #+#    #+#             */
-/*   Updated: 2024/07/25 21:38:32 by cseng-kh         ###   ########.fr       */
+/*   Updated: 2024/08/02 10:40:33 by cseng-kh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ char	**get_paths(char **envp)
 			ret[++i] = ft_strdup(token);
 			token = ft_strtok(NULL, ":");
 		}
+		return (ret);
 	}
-	return (ret);
+	else
+		return (0);
 }
