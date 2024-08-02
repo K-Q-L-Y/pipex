@@ -52,7 +52,7 @@ fclean:	clean
 run:
 	./$(NAME) $(ARGS)
 
-re: fclean $(NAME) run
+re: fclean $(NAME)
 
 push:
 	@read -p "Commit name: " commit_name; make fclean;	\
